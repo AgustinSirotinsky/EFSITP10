@@ -1,21 +1,21 @@
-//React
-import React from 'react';
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
-// Bootstrap
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+//Bootsrap
+import { Navbar } from 'react-bootstrap';
+
+//Other
 
 const Layout = () => {
-
     return (
-        <React.Fragment>
+    <React.Fragment>
         <Navbar className="bg-body-tertiary">
-            <Container>
-                <Navbar.Brand href="/">Home</Navbar.Brand>
-            </Container>
-        </Navbar>
-      </React.Fragment>
-    )
+          <Navbar.Brand href="/">
+            <h1>hola</h1>
+          </Navbar.Brand>
+      </Navbar>
+        <Outlet />
+    </React.Fragment>)
 }
 
 export default Layout
