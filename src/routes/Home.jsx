@@ -1,20 +1,29 @@
 //React
-import React from "react";
 import { Link } from "react-router-dom";
+import { React, useEffect, useState } from "react";
+
+//Other
+import proyectos from "../components/proyectos.json"; //Importar el JSON de proyectos
 
 export default function Home() { 
 
+    useEffect(() => {
+        console.log(proyectos);
+    }, [])
+
     return (
-        <div className="Home">
-            <div className="title">
-                <h1>ECO QUIZ !!!</h1>
-            </div>
-                <h2>Reglas:</h2><br/>
-                <h2>-Vas a tener que elegir de 2 opciones cual es la mejor para el medio ambiente</h2><br/>
-                <h2>-Si le pegas pasas de ronda y conseguis 1 punto</h2><br/>
-                <h2>-Si no le pegas la partida termina y volves al menu principal</h2><br/>
-                <h2>-Tu objetivo es conseguir la mayor cantidad de puntos posible</h2><br/>
-            {/* Boton */}      
-        </div>
+        <div>
+      <h1>Project List</h1>
+      <ul>
+        {proyectos.map((project) => (
+          <li key={project.ID}>
+            <h2>{project.Nombre}</h2>
+            <p>{project.Descripcion}</p>
+            <p>Fecha: {project.Fecha}</p>
+            <p>Tecnologias: {project.Tecnologias}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
     )
 }
