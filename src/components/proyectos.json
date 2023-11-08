@@ -4,13 +4,47 @@
         "Nombre": "StudentBites",
         "Descripcion": "Aplicación para buscar lugares donde comer",
         "Fecha": "1/12/2023",
-        "Tecnologias": "React, Nodejs, Express, MSSQL"
+        "Tecnologias": "React, Nodejs, Express, MSSQL",
+        "Link": "https://github.com/AgustinSirotinsky/StudentBites_Frontend https://github.com/AgustinSirotinsky/StudentBites_Backend"
     },
     {
         "ID": 1,
         "Nombre": "EcoQuiz",
         "Descripcion": "Aplicación para aprender sobre el medio ambiente",
         "Fecha": "2/10/2023",
-        "Tecnologias": "React"
+        "Tecnologias": "React",
+        "Link":"https://github.com/AgustinSirotinsky/EFSITP8"
+    },
+    {
+        "ID": 2,
+        "Nombre": "SpotiBD",
+        "Descripcion": "Una aplicacion que sirve como ventana a la base de datos de spotify",
+        "Fecha": "?",
+        "Tecnologias": "React, Nodejs, Express, MSSQL",
+        "Link":"https://github.com/AgustinSirotinsky/SpotiBD"
+    },
+    {
+        "ID": 3,
+        "Nombre": "Calendar",
+        "Descripcion": "Aplicacion que utiliza el calendario del celular con React Native",
+        "Fecha": "1/11/2023",
+        "Tecnologias": "React Native",
+        "Link":"https://github.com/AgustinSirotinsky/Calendar"
+    },
+    {
+        "ID": 4,
+        "Nombre": "Task List",
+        "Descripcion": "Una task list que esta hecha en React Native",
+        "Fecha": "7/9/2023",
+        "Tecnologias": "React Native",
+        "Link":"https://github.com/AgustinSirotinsky/TaskList_RN"
+    },
+    {
+        "ID": 5,
+        "Nombre": "AA2022",
+        "Descripcion": "Una mock application que simula una pagina de aerolineas",
+        "Fecha": "2/3/2022",
+        "Tecnologias": "html, css",
+        "Link":"https://github.com/AgustinSirotinsky/AA2022"
     }
 ]

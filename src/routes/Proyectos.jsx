@@ -16,21 +16,22 @@ import proyectos from "../components/proyectos.json"; //Importar el JSON de proy
 import StudentBites from "../images/StudentBites.png"
 import EcoQuiz from "../images/EcoQuiz.png"
 import SpotiBD from "../images/SpotiBD.png"
+import Calendar from "../images/Calendar.png"
+import TaskList from "../images/TaskList.png"
+import AA2022 from "../images/AA2022.png"
 
 
-export default function Home() { 
-  let ImagenesArray = [StudentBites, EcoQuiz, SpotiBD];	
-    useEffect(() => {
-        console.log(ImagenesArray);
-    }, [])
+export default function Proyectos() { 
+
+    //El array tiene q estar en orden pq se rige por los IDs
+  let ImagenesArray = [StudentBites, EcoQuiz, SpotiBD, Calendar, TaskList, AA2022];
 
     return (
       <Container>
-      <h1>PORTAFOLIO 😈🤓</h1>
       <Row>
 
-        {proyectos.slice(0, 3).map((project) => (
-          <Col key={project.ID}>
+        {proyectos.map((project) => (
+          <Col key={project.ID} xs={12} sm={6} md={4}>
             <Card>
               <Card.Img
                 variant="top"

@@ -11,7 +11,16 @@ const Layout = () => {
     <React.Fragment>
         <Navbar className="bg-body-tertiary">
           <Navbar.Brand href="/">
-            <h1>hola</h1>
+            <h1>Home</h1>
+            </Navbar.Brand>
+          <Navbar.Brand href="/information">
+            <h2>Info</h2>
+          </Navbar.Brand>
+          <Navbar.Brand href="/favoritos">
+            <h2>Favoritos</h2>
+          </Navbar.Brand>
+          <Navbar.Brand href="/proyectos">
+            <h2>Mis proyectos</h2>
           </Navbar.Brand>
       </Navbar>
         <Outlet />
